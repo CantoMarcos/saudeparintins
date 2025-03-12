@@ -1,0 +1,206 @@
+@import "primeicons/primeicons.css";
+
+/* Centralizar todo o conteúdo */
+.login-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    position: relative;
+    background: linear-gradient(135deg, #f5f7ff 0%, #e9f0ff 100%);
+    overflow: hidden;
+}
+
+/* Container do Card */
+.card-container {
+    width: 100%;
+    max-width: 400px;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+}
+
+.login-card {
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+    padding: 2rem;
+    width: 100%;
+}
+
+/* Ícone superior */
+.logo-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+
+.logo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #3d34df 40%, #920000 60%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo i {
+    font-size: 2.5rem;
+    color: white;
+}
+
+/* Títulos */
+.title {
+    font-size: 1.75rem;
+    font-weight: 700;
+    text-align: center;
+    background: linear-gradient(135deg, #3d34df 40%, #920000 60%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.subtitle {
+    text-align: center;
+    color: #64748b;
+    margin-bottom: 1.5rem;
+}
+
+/* Labels */
+.input-label {
+    font-weight: 600;
+    font-size: 0.95rem;
+    color: #4a5568;
+    display: block;
+    margin-bottom: 0.4rem;
+}
+
+/* Inputs */
+.input-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+/* Ícone à esquerda (envelope e cadeado) */
+.input-wrapper i:first-child {
+    position: absolute;
+    left: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.2rem;
+    color: #94a3b8;
+}
+
+/* Ícone à direita (olho para alternar senha) */
+.input-wrapper .toggle-password {
+    position: absolute;
+    right: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.2rem;
+    color: #94a3b8;
+    cursor: pointer;
+}
+
+/* Ajusta o padding do input para não sobrepor os ícones */
+.input-wrapper input {
+    padding-left: 40px !important;
+    padding-right: 40px !important;
+}
+
+/* Campos arredondados */
+.rounded-input {
+    border-radius: 16px !important;
+    padding: 12px 16px;
+    border: 1px solid #e2e8f0;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    width: 100%;
+}
+
+.rounded-input:focus {
+    box-shadow: 0 0 0 3px rgba(139, 92, 246, 0.2);
+    border-color: #8b5cf6;
+}
+
+/* Ajuste para alinhar "Esqueceu a senha?" */
+.password-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+}
+
+.forgot-password {
+    font-size: 0.9rem;
+    color: #130e1e;
+    text-decoration: none;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+/* Checkbox */
+.field-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+/* Caixa do checkbox */
+:host ::ng-deep .p-checkbox .p-checkbox-box {
+    border: 2px solid #130e1e;;
+    border-radius: 6px;
+    width: 18px;
+    height: 18px;
+    transition: all 0.3s ease;
+}
+
+.remember-label {
+    font-size: 0.9rem;
+    color: #130e1e;;
+}
+
+/* Botão */
+:host ::ng-deep .p-button {
+    width: 100% !important;
+    height: 3rem !important;
+    font-weight: 600;
+    font-size: 1rem;
+    border-radius: 12px !important;
+    background: #3d34df;
+    border: none !important;
+    transition: all 0.3s ease !important;
+    color: white !important;
+    margin-top: 2rem;
+}
+
+:host ::ng-deep .p-button:hover {
+    background: #920000;
+}
+
+/* Links e textos */
+.signup-link {
+    text-align: center;
+    margin-top: 1.5rem;
+    font-size: 0.9rem;
+    color: #64748b;
+}
+
+.signup-link a {
+    color: #130e1e;
+    font-weight: 500;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.signup-link a:hover {
+    color: #7c3aed;
+    text-decoration: underline;
+}
